@@ -59,3 +59,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+// Hero Slider
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.hero-slide');
+    if (slides.length > 0) {
+        let currentSlide = 0;
+
+        // Show the first slide initially
+        // slides[0].classList.add('active'); // It's already in HTML
+
+        setInterval(() => {
+            // Remove active from current
+            slides[currentSlide].classList.remove('active');
+
+            // Calculate next
+            currentSlide = (currentSlide + 1) % slides.length;
+
+            // Add active to next
+            slides[currentSlide].classList.add('active');
+        }, 5000); // 5 seconds
+    }
+});

@@ -161,7 +161,7 @@ img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 80px 0;
+    padding: 30px 0;
     position: relative;
     background-color: #FFF8E1;
     /* Fallback */
@@ -169,20 +169,22 @@ img {
 
 .hero .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
 }
 
 .hero-content {
-    flex: 1;
-    max-width: 600px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .hero-content h1 {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 800;
     color: var(--heading-color);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     line-height: 1.2;
 }
 
@@ -192,31 +194,40 @@ img {
 
 .hero-content p {
     font-size: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     color: #666;
 }
 
 .hero-image {
-    flex: 1;
+    width: 100%;
     display: flex;
     justify-content: center;
-    animation: float 3s ease-in-out infinite;
+    position: relative;
+    height: 250px;
+    margin-bottom: 10px;
 }
 
-.hero-image img {
-    max-width: 400px;
+/* Slider Styles */
+.hero-slide {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90%;
+    max-height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    width: auto;
+    object-fit: contain;
 }
 
-@keyframes float {
+.hero-slide.active {
+    opacity: 1;
+    z-index: 2;
+}
 
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-15px);
-    }
+.hero-btns-container {
+    margin-top: 10px;
 }
 
 /* Features */
@@ -333,7 +344,9 @@ img {
 }
 
 .product-image img {
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     transition: var(--transition);
 }
 
@@ -433,12 +446,17 @@ img {
 }
 
 .product-info h3 {
-    font-size: 18px;
+    font-size: 16px;
     color: var(--heading-color);
     margin-bottom: 10px;
-    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    height: 42px;
+    /* Fixed height for 2 lines */
+    line-height: 1.3;
 }
 
 .price {
@@ -446,6 +464,8 @@ img {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    flex-direction: row-reverse;
+    /* New Price (2nd) on Right for RTL focus */
 }
 
 .new-price {
