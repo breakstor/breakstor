@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر بريك ستور | BreakStore</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/images/logo.png" alt="BreakStore Logo">
+                </a>
+            </div>
+
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#" class="active">الرئيسية</a></li>
+                    <li><a href="#">المنتجات</a></li>
+                    <li><a href="#">العروض</a></li>
+                    <li><a href="#">من نحن</a></li>
+                    <li><a href="#">اتصل بنا</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+                <a href="#" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="badge">2</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-menu-btn" id="closeMenuBtn"><i class="fas fa-times"></i></button>
+        <ul class="mobile-nav-links">
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">المنتجات</a></li>
+            <li><a href="#">العروض</a></li>
+            <li><a href="#">من نحن</a></li>
+            <li><a href="#">اتصل بنا</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('assets/images/banner-bg.webp');">
+        <div class="container">
+            <div class="hero-content">
+                <h1>أفضل المنتجات الرقمية <br> <span>بأفضل الأسعار</span></h1>
+                <p>تسوق الآن واحصل على بطاقات الألعاب، وشحنات ببجي، ومنتجات تقنية عالية الجودة.</p>
+                <div class="hero-btns">
+                    <a href="#products" class="btn btn-primary">تسوق الأن <i class="fas fa-arrow-left"></i></a>
+                    <a href="#offers" class="btn btn-secondary">عروضنا</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Using Product 2 (Laptop) as a hero element example -->
+                <img src="assets/images/product-2.png" alt="Featured Laptop">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-box">
+                <i class="fas fa-bolt"></i>
+                <h3>تسليم فوري</h3>
+                <p>استلم الكود الخاص بك فوراً بعد الدفع</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-shield-alt"></i>
+                <h3>دفع آمن</h3>
+                <p>وسائل دفع متعددة ومشفرة بالكامل</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-headset"></i>
+                <h3>دعم متواصل</h3>
+                <p>فريق دعم فني جاهز لخدمتك 24/7</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Sections -->
+
+    <!-- 1. Electronic Devices & Accessories -->
+    <section class="products" id="electronics">
+        <div class="container">
+            <div class="section-title">
+                <h2>أجهزة الكترونية واكسسوارات</h2>
+                <div class="line"></div>
+            </div>
+            <div class="product-grid">
+                <!-- PS5 Bundle -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-badge">جديد</span>
+                        <img src="assets/images/ps5-bundle.png" alt="PlayStation 5 Bundle">
+                        <div class="overlay">
+                            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>باقة بلايستيشن 5 المتكاملة</h3>
+                        <div class="price"><span class="new-price">2800 ر.س</span></div>
+                    </div>
+                </div>
+
+                <!-- PS4 Pro -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/ps4-console.jpg" alt="PlayStation 4 Pro">
+                        <div class="overlay">
+                            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>كونسول بلايستيشن 4 برو</h3>
+                        <div class="price">
+                            <span class="old-price">1800 ر.س</span>
+                            <span class="new-price">1400 ر.س</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laptop -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/product-2.png" alt="Laptop Toshiba">
+                        <div class="overlay">
+                            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>لابتوب توشيبا للأعمال</h3>
+                        <div class="price"><span class="new-price">2500 ر.س</span></div>
+                    </div>
+                </div>
+
+                <!-- PS5 Controller -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-badge">أصلي</span>
+                        <img src="assets/images/ps4-controller.png" alt="PS5 Controller"
+                            style="filter: hue-rotate(90deg);"> <!-- Placeholder: using modified PS4 img -->
+                        <div class="overlay">
+                            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>يد تحكم بلايستيشن 5 (DualSense)</h3>
+                        <div class="price"><span class="new-price">350 ر.س</span></div>
+                    </div>
+                </div>
+
+                <!-- PS4 Controller -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/ps4-controller.png" alt="PS4 Controller">
+                        <div class="overlay">
+                            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>يد تحكم بلايستيشن 4 (DualShock)</h3>
+                        <div class="price"><span class="new-price">250 ر.س</span></div>
+                    </div>
+                </div>
+
+                <!-- PS3 Controller -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/ps4-controller.png" alt="PS3 Controller"
+                            style="filter: grayscale(100%);"> <!-- Placeholder: using grayscale PS4 img -->
+                        <div class="overlay">
+                            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>يد تحكم بلايستيشن 3</h3>
+                        <div class="price"><span class="new-price">100 ر.س</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. School and Office Products -->
+    <section class="products products-alt" id="school-office" style="background-color: #fff;">
+        <div class="container">
+            <div class="section-title">
+                <h2>منتجات مدرسية ومكتبية</h2>
+                <div class="line"></div>
+            </div>
+            <div class="product-grid">
+                <!-- Placeholder 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/logo.png" style="opacity:0.5" alt="Notebook"> <!-- Placeholder -->
+                        <div class="overlay">
+                            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>دفتر ملاحظات فاخر</h3>
+                        <div class="price"><span class="new-price">15 ر.س</span></div>
+                    </div>
+                </div>
+                <!-- Placeholder 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/logo.png" style="opacity:0.5" alt="Pen Set">
+                        <div class="overlay">
+                            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>طقم أقلام حبر جاف</h3>
+                        <div class="price"><span class="new-price">25 ر.س</span></div>
+                    </div>
+                </div>
+                <!-- Placeholder 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/logo.png" style="opacity:0.5" alt="Backpack">
+                        <div class="overlay">
+                            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>حقيبة ظهر مدرسية</h3>
+                        <div class="price"><span class="new-price">120 ر.س</span></div>
+                    </div>
+                </div>
+                <!-- Placeholder 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-badge">-10%</span>
+                        <img src="assets/images/logo.png" style="opacity:0.5" alt="Desk Organizer">
+                        <div class="overlay">
+                            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>منظم مكتب خشبي</h3>
+                        <div class="price">
+                            <span class="old-price">50 ر.س</span>
+                            <span class="new-price">45 ر.س</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Digital Products -->
+    <section class="products" id="digital">
+        <div class="container">
+            <div class="section-title">
+                <h2>منتجات رقمية</h2>
+                <div class="line"></div>
+            </div>
+            <div class="product-grid">
+                <!-- PUBG Mobile -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-badge">أكثر مبيعاً</span>
+                        <img src="assets/images/pubg-mobile.webp" alt="PUBG Mobile UC">
+                        <div class="overlay">
+                            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>شحنات ببجي موبايل (60 UC)</h3>
+                        <div class="price">
+                            <span class="new-price">3.5 ر.س</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call of Duty Mobile -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/cod-mobile.png" alt="Call of Duty Mobile CP">
+                        <div class="overlay">
+                            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>شحن كود موبايل (CP)</h3>
+                        <div class="price"><span class="new-price">5.0 ر.س</span></div>
+                    </div>
+                </div>
+
+                <!-- Free Fire -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-badge">عرض</span>
+                        <img src="assets/images/free-fire.webp" alt="Free Fire Diamonds">
+                        <div class="overlay">
+                            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>جواهر فري فاير (100+10)</h3>
+                        <div class="price">
+                            <span class="old-price">6.0 ر.س</span>
+                            <span class="new-price">4.5 ر.س</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apex Legends -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/apex-legends.png" alt="Apex Legends Coins">
+                        <div class="overlay">
+                            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>عملات أبيكس ليجندز</h3>
+                        <div class="price"><span class="new-price">10.0 ر.س</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Gifts -->
+    <section class="products products-alt" id="gifts" style="background-color: #fff;">
+        <div class="container">
+            <div class="section-title">
+                <h2>هدايا</h2>
+                <div class="line"></div>
+            </div>
+            <div class="product-grid">
+                <!-- Placeholder 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/logo.png" style="opacity:0.5" alt="Gift Box">
+                        <div class="overlay">
+                            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>صندوق هدايا فاخر</h3>
+                        <div class="price"><span class="new-price">150 ر.س</span></div>
+                    </div>
+                </div>
+                <!-- Placeholder 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/logo.png" style="opacity:0.5" alt="Perfume">
+                        <div class="overlay">
+                            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>عطر مميز للنساء</h3>
+                        <div class="price"><span class="new-price">300 ر.س</span></div>
+                    </div>
+                </div>
+                <!-- Placeholder 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/logo.png" style="opacity:0.5" alt="Flowers">
+                        <div class="overlay">
+                            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>باقة ورد طبيعي</h3>
+                        <div class="price"><span class="new-price">90 ر.س</span></div>
+                    </div>
+                </div>
+                <!-- Placeholder 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="discount-badge">عرض خاص</span>
+                        <img src="assets/images/logo.png" style="opacity:0.5" alt="Unknown Gift">
+                        <div class="overlay">
+                            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> إضافة للسلة</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>بكج الهدايا المتكامل</h3>
+                        <div class="price">
+                            <span class="old-price">500 ر.س</span>
+                            <span class="new-price">399 ر.س</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/images/logo.png" alt="Logo" class="footer-logo">
+                    <p>متجر بريك ستور، وجهتك الأولى لكل ما يخص الألعاب والمنتجات الرقمية. جودة، سرعة، وأمان.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#">من نحن</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>تواصل معنا</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone-alt"></i> +966 50 000 0000</li>
+                        <li><i class="fas fa-envelope"></i> support@breakstore.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>تابعنا</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>جميع الحقوق محفوظة &copy; 2026 متجر بريك ستور</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
